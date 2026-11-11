@@ -1,0 +1,55 @@
+
+.todo .inputs{
+    
+    width: 60vw;
+    margin-top: 10vh;
+    margin-left:20vw;
+
+}
+.todo .inputs input{
+
+    height:5vh;
+    width:40vw;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+.todo .inputs input[type=text]{
+
+    font-size: large;
+
+}
+.todo .inputs button{
+
+    height: 5vh;
+    border-radius: 5px;
+    display: inline-block;
+    width: 10vw;
+    font-size: large;
+    background-color: blue;
+    color: white;
+    margin-left: 5px;
+}
+
+.todo .items ol li{
+    font-size: large;
+    display: inline-block;
+    margin: 2px;
+    
+    margin-left:20vw;
+}
+
+.todo .items ol button{
+
+    display: inline-block;
+    height: 5vh;
+    width: 5vw;
+    color: white;
+    background-color: red;
+    margin: 2px;
+
+}
