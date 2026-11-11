@@ -9,14 +9,15 @@ export default function Todo(){
     let adding=()=>{
 
         setitems([...items,textboxvalue.current.value]);
+        textboxvalue.current.value="";
 
     };
 
-    let remove=(it)=>{
+    let remove=(idx)=>{
 
         setitems(
-            items.filter((t)=>{
-                return t != it
+            items.filter((t,id)=>{
+                return id != idx
             })
         )
     };
@@ -35,9 +36,9 @@ export default function Todo(){
 
                 <ol>
                     {
-                        items.map((it)=>{
+                        items.map((it,idx)=>{
                             
-                            return <><li>{it}</li><button onClick={()=> remove(it)}>X</button><br /></>
+                            return <><li kay={it+idx}>{it}</li><button onClick={()=> remove(idx)}>X</button><br /></>
 
                         })
                     }
